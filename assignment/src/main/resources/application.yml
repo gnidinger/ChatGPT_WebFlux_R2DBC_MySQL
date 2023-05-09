@@ -1,0 +1,25 @@
+spring:
+  r2dbc:
+    enabled: true
+    url: r2dbc:mysql://localhost:3306/assignment
+    username: root
+    password: MyNewPassword!123
+    pool:
+      enabled: true
+      max-size: 20
+
+logging:
+  level:
+    org.springframework.r2dbc.core: debug
+
+server:
+  port: 8080
+  error:
+    whitelabel:
+      enabled: false
+
+openai:
+  api-key: ${OPEN_AI_KEY}
+
+chatgpt:
+  api-key: ${OPEN_AI_KEY}

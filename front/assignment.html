@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assignment.css">
+    <title>Chat Bot</title>
+</head>
+
+<body>
+    <div class="chat_wrap" style="display:none">
+        <div class="header">
+            <h1>AVICA - AI Sales Manager</h1>
+        </div>
+        <div class="chat">
+            <ul>
+                <!-- -->
+            </ul>
+            <img class="loading" src="loading.gif" alt="loading" style="display:none">
+        </div>
+        <div class="input-div">
+            <textarea placeholder="메시지를 입력하세요."></textarea>
+            <span class="format"></span>
+            <button class="send-btn">Send</button>
+        </div>
+
+        <!-- format -->
+
+        <div class="chat format">
+            <ul>
+                <li>
+                    <div class="sender">
+                        <span></span>
+                    </div>
+                    <div class="message">
+                        <span></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="assignment.js"></script>
+</body>
+
+</html>
